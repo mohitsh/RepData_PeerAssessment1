@@ -1,0 +1,16 @@
+## Final Project
+
+This project had a very long data set.
+So training took very long time.
+I have applied random forest method to classify the model.
+Classe is the outcome and for variables I have used all the columns.
+This probably increased the time taken while training.
+
+To measure the quality of workout classe is the best variable.
+That's why I have used classe as the output and trained it over all
+the other variables. 
+Now to model the data I have used random forest because with my little 
+knowledge about algorithms I think this would be the best algorithm to 
+classify peopel based on their behaviours.
+
+
