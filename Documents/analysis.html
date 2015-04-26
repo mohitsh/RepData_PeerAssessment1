@@ -211,21 +211,71 @@ closely related I think error is going to be pretty less.</p>
 
 <p>Actual Errors:</p>
 
-<p>Type of random forest: classification
-Number of trees: 500
-No. of variables tried at each split: 16
-OOB estimate of  error rate: 0.1%</p>
+<ul>
+<li>Type of random forest: classification</li>
+<li>Number of trees: 500</li>
+<li>No. of variables tried at each split: 16</li>
+<li>OOB estimate of  error rate: 0.1%</li>
+</ul>
 
 <p>Confusion Matrix:</p>
 
-<pre><code> A    B    C    D    E  class.error
-</code></pre>
-
-<p>A 5578    2    0    0    0 0.0003584229
-B    3 3792    2    0    0 0.0013168291
-C    0    4 3417    1    0 0.0014611338
-D    0    0    3 3209    4 0.0021766169
-E    0    0    0    1 3606 0.0002772387</p>
+<table style="width:100%">
+  <tr>
+    <td></td>
+    <td>A</td>      
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+    <td>E</td>
+    <td>class.error</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>5578</td>    
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td> 0.0003584229</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>3</td>    
+    <td>3792</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td> 0.0013168291</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>0</td>    
+    <td>4</td>
+    <td>3417</td>
+    <td>1</td>
+    <td>0</td>
+    <td> 0.0014611338</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>0</td>    
+    <td>0</td>
+    <td>3</td>
+    <td>3209</td>
+    <td>4</td>
+    <td> 0.0021766169</td>
+  </tr>
+  <tr>
+    <td>E</td>
+    <td>0</td>    
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>3606</td>
+    <td> 0.0002772387</td>
+  </tr>
+</table>
 
 <p>relevant plots:</p>
 
