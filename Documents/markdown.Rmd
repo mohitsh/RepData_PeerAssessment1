@@ -1,5 +1,12 @@
 ## Final Project
 
+Using equipments like Jawbone Up, Nike FuelBand, and Fitbit
+now it is possible to measure perosnal performances. People
+usually measure their performance quantity but not the performance
+quality. Main goal of this project is to use data from accelerometers
+on the belt, forearm, arm, and dumbell of 6 participants and precict
+the manner in which they did the exercise.
+
 This project had a very long data set.
 So training took very long time.
 I have applied random forest method to classify the model to 
@@ -12,7 +19,8 @@ classify people based on their behaviours.
 
 code 
 
-```{r library(caret)
+```{r code}
+library(caret)
 library(randomForest)
 
 training <- read.csv("pml-training.csv")
@@ -41,5 +49,5 @@ pml_write_files = function(x){
   }
 }
 
-pml_write_files(pred) }
+pml_write_files(pred) 
 ```
