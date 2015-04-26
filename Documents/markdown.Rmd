@@ -50,4 +50,12 @@ pml_write_files = function(x){
 }
 
 pml_write_files(pred) 
+
+varimportance <- varImp(modfit, scale=FALSE)
+
+plot(varimportance)
+
+plot(pred, col=rainbow(10))
+
+
 ```
