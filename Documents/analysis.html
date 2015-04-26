@@ -165,7 +165,8 @@ hr {
 <body>
 <h2>Final Project</h2>
 
-<p>This project had a very long data set. So training took very long time. I have applied random forest method to classify the model. Classe is the outcome and for predictors I have taken some of the rows. Predictors are:</p>
+<p>library(knitr)
+This project had a very long data set. So training took very long time. I have applied random forest method to classify the model. Classe is the outcome and for predictors I have taken some of the rows. Predictors are:</p>
 
 <ul>
 <li>raw_timestamp_part_1</li>
@@ -202,6 +203,38 @@ hr {
 </ul>
 
 <p>Reason behind choosing these variables is that these were the only variables with significant change. So they could effect the outcome. Rest were more or less constant. There may be some variables that I have missed probably but I&#39;d say these vaiables were sufficient to provide reliable results. Besides choosing less variables rather than choosing all of them reduced time otherwise it&#39;d have taken hours to train the data. To measure the quality of workout classe is the best variable. That&#39;s why I have used classe as the output. Now to model the data I have used random forest because with my little knowledge about algorithms I think this would be the best algorithm to classify people based on their behaviours.</p>
+
+<p>Error Expectation
+I expect error to be significantly less. As the predictors are closely related to the outcome
+and this is in-sample error. So considering the fact that human behaviours and classe are 
+closely related I think error is going to be pretty less.</p>
+
+<p>Actual Errors:</p>
+
+<p>Type of random forest: classification
+Number of trees: 500
+No. of variables tried at each split: 16
+OOB estimate of  error rate: 0.1%</p>
+
+<p>Confusion Matrix:</p>
+
+<pre><code> A    B    C    D    E  class.error
+</code></pre>
+
+<p>A 5578    2    0    0    0 0.0003584229
+B    3 3792    2    0    0 0.0013168291
+C    0    4 3417    1    0 0.0014611338
+D    0    0    3 3209    4 0.0021766169
+E    0    0    0    1 3606 0.0002772387</p>
+
+<p>relevant plots:</p>
+
+<ul>
+<li><p>plot for variable importance
+<a href="https://cloud.githubusercontent.com/assets/3235418/7336844/253af7b6-ec2e-11e4-9dc6-104bbdb91854.png">https://cloud.githubusercontent.com/assets/3235418/7336844/253af7b6-ec2e-11e4-9dc6-104bbdb91854.png</a></p></li>
+<li><p>ROC plot
+<a href="https://cloud.githubusercontent.com/assets/3235418/7336845/2544479e-ec2e-11e4-8af0-0606895d2668.png">https://cloud.githubusercontent.com/assets/3235418/7336845/2544479e-ec2e-11e4-8af0-0606895d2668.png</a></p></li>
+</ul>
 
 </body>
 
