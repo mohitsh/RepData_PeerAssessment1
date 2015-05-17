@@ -67,7 +67,7 @@ print (g2)
 ## (geom_path).
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![](https://github.com/mohitsh/RepData_PeerAssessment1/blob/master/Documents/g2.png?raw=true) 
 
 #####  5-minute interval, on average across all the days in the dataset, contains the maximum number of steps
 
@@ -142,7 +142,7 @@ g3 <- g3 + xlab("total steps per day (missing values replaced)")
 print (g3)
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
+![](https://github.com/mohitsh/RepData_PeerAssessment1/blob/master/Documents/g3.png?raw=true) 
 
 ##### so mean and median of total number of steps taken per day are
 ##### mean 1.0751738 &times; 10<sup>4</sup> median 1.0656 &times; 10<sup>4</sup>
@@ -201,5 +201,5 @@ g4 <- g4 + xlab("interval") + ylab("weekdays or weekend days")
 print (g4)
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
+![https://github.com/mohitsh/RepData_PeerAssessment1/blob/master/Documents/g4.png?raw=true](figure/unnamed-chunk-10-1.png) 
 
