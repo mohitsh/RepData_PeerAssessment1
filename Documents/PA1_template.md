@@ -31,12 +31,10 @@ g1 <- ggplot(ans, aes(x=V1))
 g1 <- g1 + geom_histogram(color="steelblue", binwidth=1500)
 g1 <- g1 +geom_density()
 g1 <- g1 + xlab("sum of steps by date")
-g1
+print(g1)
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
-
-(![alt tag]https://github.com/mohitsh/RepData_PeerAssessment1/blob/master/Documents/g1.png?raw=true)
 
 ##### mean and median of the total number of steps taken per day
 
@@ -61,7 +59,7 @@ avg_steps <- (sum_steps)/length(sum_steps)
 data$avg_steps <- (data$steps)/61
 g2 <- ggplot(data, aes(interval,avg_steps))
 g2 <- g2 + geom_line() 
-g2
+print (g2)
 ```
 
 ```
@@ -141,7 +139,7 @@ sum_steps <- ans$V1
 g3 <- ggplot(ans, aes(x=V1))
 g3 <- g3 + geom_histogram(binwidth=1500, color="steelblue")
 g3 <- g3 + xlab("total steps per day (missing values replaced)")
-g3
+print (g3)
 ```
 
 ![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
@@ -200,7 +198,7 @@ g4 <- ggplot(data, aes(interval,avg_steps_week))
 g4 <- g4 + geom_line(color="steelblue") 
 g4 <- g4 + facet_grid(.~level)
 g4 <- g4 + xlab("interval") + ylab("weekdays or weekend days")
-g4
+print (g4)
 ```
 
 ![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
