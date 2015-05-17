@@ -201,5 +201,5 @@ g4 <- g4 + xlab("interval") + ylab("weekdays or weekend days")
 print (g4)
 ```
 
-![https://github.com/mohitsh/RepData_PeerAssessment1/blob/master/Documents/g4.png?raw=true](figure/unnamed-chunk-10-1.png) 
+![](https://github.com/mohitsh/RepData_PeerAssessment1/blob/master/Documents/g4.png?raw=true) 
 
