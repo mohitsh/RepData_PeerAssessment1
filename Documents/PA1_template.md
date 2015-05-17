@@ -7,22 +7,6 @@
 
 ```r
 library("data.table")
-```
-
-```
-## Warning: package 'data.table' was built under R version 3.2.0
-```
-
-```
-## Warning in fun(libname, pkgname): bytecode version mismatch; using eval
-```
-
-```
-## data.table 1.9.4  For help type: ?data.table
-## *** NB: by=.EACHI is now explicit. See README to restore previous behaviour.
-```
-
-```r
 library("plyr")
 data <- read.csv("./repdata-data-activity/activity.csv")
 df <- data.table(data)
@@ -43,11 +27,11 @@ sum(mydata$steps)
 ```r
 library(ggplot2)
 library("MASS")
-g <- ggplot(ans, aes(x=V1))
-g <- g + geom_histogram(color="steelblue", binwidth=1500)
-g <- g +geom_density()
-g <- g + xlab("sum of steps by date")
-g
+g1 <- ggplot(ans, aes(x=V1))
+g1 <- g1 + geom_histogram(color="steelblue", binwidth=1500)
+g1 <- g1 +geom_density()
+g1 <- g1 + xlab("sum of steps by date")
+g1
 ```
 
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
@@ -73,9 +57,9 @@ rbind(c("Mean", "Median"),c(round(mean(sum_steps),3),median(sum_steps)))
 ```r
 avg_steps <- (sum_steps)/length(sum_steps)
 data$avg_steps <- (data$steps)/61
-g <- ggplot(data, aes(interval,avg_steps))
-g <- g + geom_line() 
-g
+g2 <- ggplot(data, aes(interval,avg_steps))
+g2 <- g2 + geom_line() 
+g2
 ```
 
 ```
@@ -152,10 +136,10 @@ df <- data.table(data)
 ans <- df[, sum(steps, na.rm=T), by=date]
 sum_steps <- ans$V1
 
-g <- ggplot(ans, aes(x=V1))
-g <- g + geom_histogram(binwidth=1500, color="steelblue")
-g <- g + xlab("total steps per day (missing values replaced)")
-g
+g3 <- ggplot(ans, aes(x=V1))
+g3 <- g3 + geom_histogram(binwidth=1500, color="steelblue")
+g3 <- g3 + xlab("total steps per day (missing values replaced)")
+g3
 ```
 
 ![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
@@ -210,11 +194,11 @@ for (i in 1:dim(data[1]))
 ```
 
 ```r
-g <- ggplot(data, aes(interval,avg_steps_week))
-g <- g + geom_line(color="steelblue") 
-g <- g + facet_grid(.~level)
-g <- g + xlab("interval") + ylab("weekdays or weekend days")
-g
+g4 <- ggplot(data, aes(interval,avg_steps_week))
+g4 <- g4 + geom_line(color="steelblue") 
+g4 <- g4 + facet_grid(.~level)
+g4 <- g4 + xlab("interval") + ylab("weekdays or weekend days")
+g4
 ```
 
 ![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
