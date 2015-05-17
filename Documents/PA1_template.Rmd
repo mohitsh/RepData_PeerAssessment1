@@ -30,6 +30,8 @@ g1
 
 ```
 
+(![alt tag]https://github.com/mohitsh/RepData_PeerAssessment1/blob/master/Documents/g1.png?raw=true)
+
 ##### mean and median of the total number of steps taken per day
 ```{r}
 rbind(c("Mean", "Median"),c(round(mean(sum_steps),3),median(sum_steps)))
