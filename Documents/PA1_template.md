@@ -34,7 +34,7 @@ g1 <- g1 + xlab("sum of steps by date")
 print(g1)
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png) 
+![](https://github.com/mohitsh/RepData_PeerAssessment1/blob/master/Documents/g1.png?raw=true) 
 
 ##### mean and median of the total number of steps taken per day
 
